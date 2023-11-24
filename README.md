@@ -31,45 +31,45 @@ If any argument is not provided, a random selection will be used.
 The generated meme will be saved in the output directory.
 
 # File Structure
-.<br/>
-├── MemeGenerator.py<br/>
-├── QuoteEngine<br/>
-│   ├── CSVIngestor.py<br/>
-│   ├── DocxIngestor.py<br/>
-│   ├── Ingestor.py<br/>
-│   ├── IngestorInterface.py<br/>
-│   ├── PDFIngestor.py<br/>
-│   ├── QuoteModel.py<br/>
-│   ├── TextIngestor.py<br/>
-│   └── __init__.py<br/>
-├── README.md<br/>
-├── _data<br/>
-│   ├── DogQuotes<br/>
-│   │   ├── DogQuotesCSV.csv<br/>
-│   │   ├── DogQuotesDOCX.docx<br/>
-│   │   ├── DogQuotesPDF.pdf<br/>
-│   │   ├── DogQuotesTXT.txt<br/>
-│   │   └── test.txt<br/>
-│   ├── SimpleLines<br/>
-│   │   ├── SimpleLines.csv<br/>
-│   │   ├── SimpleLines.docx<br/>
-│   │   ├── SimpleLines.pdf<br/>
-│   │   └── SimpleLines.txt<br/>
-│   └── photos<br/>
-│       └── dog<br/>
-│           ├── xander_1.jpg<br/>
-│           ├── xander_2.jpg<br/>
-│           ├── xander_3.jpg<br/>
-│           └── xander_4.jpg<br/>
-├── app.py<br/>
-├── meme.py<br/>
-├── requirements.txt<br/>
-├── templates<br/>
-│   ├── base.html<br/>
-│   ├── meme.html<br/>
-│   └── meme_form.html<br/>
-└── tree.txt<br/><br/>
-
+```
+.
+├── MemeGenerator.py
+├── QuoteEngine
+│   ├── CSVIngestor.py
+│   ├── DocxIngestor.py
+│   ├── Ingestor.py
+│   ├── IngestorInterface.py
+│   ├── PDFIngestor.py
+│   ├── QuoteModel.py
+│   ├── TextIngestor.py
+│   └── __init__.py
+├── README.md
+├── _data
+│   ├── DogQuotes
+│   │   ├── DogQuotesCSV.csv
+│   │   ├── DogQuotesDOCX.docx
+│   │   ├── DogQuotesPDF.pdf
+│   │   ├── DogQuotesTXT.txt
+│   │   └── test.txt
+│   ├── SimpleLines
+│   │   ├── SimpleLines.csv
+│   │   ├── SimpleLines.docx
+│   │   ├── SimpleLines.pdf
+│   │   └── SimpleLines.txt
+│   └── photos
+│       └── dog
+│           ├── xander_1.jpg
+│           ├── xander_2.jpg
+│           ├── xander_3.jpg
+│           └── xander_4.jpg
+├── app.py
+├── meme.py
+├── requirements.txt
+└── templates
+    ├── base.html
+    ├── meme.html
+    └── meme_form.html
+```
 
 # Dependencies
 Pillow
