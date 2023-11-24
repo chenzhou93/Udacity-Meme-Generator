@@ -32,28 +32,42 @@ The generated meme will be saved in the output directory.
 
 # File Structure
 .
-├── _data/
-│   ├── DogQuotes
-│   ├── photos
-│   └── SimpleLines
-├── QuoteEngine/
-│   ├── __init__.py
+├── MemeGenerator.py
+├── QuoteEngine
 │   ├── CSVIngestor.py
 │   ├── DocxIngestor.py
 │   ├── Ingestor.py
 │   ├── IngestorInterface.py
 │   ├── PDFIngestor.py
 │   ├── QuoteModel.py
-│   └── TextIngestor.py
-├── templates/
-│   ├── base.html
-│   ├── meme_form.html
-│   └── meme.html
+│   ├── TextIngestor.py
+│   └── __init__.py
+├── README.md
+├── _data
+│   ├── DogQuotes
+│   │   ├── DogQuotesCSV.csv
+│   │   ├── DogQuotesDOCX.docx
+│   │   ├── DogQuotesPDF.pdf
+│   │   ├── DogQuotesTXT.txt
+│   │   └── test.txt
+│   ├── SimpleLines
+│   │   ├── SimpleLines.csv
+│   │   ├── SimpleLines.docx
+│   │   ├── SimpleLines.pdf
+│   │   └── SimpleLines.txt
+│   └── photos
+│       └── dog
+│           ├── xander_1.jpg
+│           ├── xander_2.jpg
+│           ├── xander_3.jpg
+│           └── xander_4.jpg
 ├── app.py
 ├── meme.py
-├── MemeGenerator.py
 ├── requirements.txt
-└── README.md
+└── templates
+    ├── base.html
+    ├── meme.html
+    └── meme_form.html
 
 # Dependencies
 Pillow
