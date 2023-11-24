@@ -2,13 +2,13 @@
 A multimedia application to dynamically generate memes, including an image with an overlaid quote.
 
 # Table of Contents
-Installation
-Usage
-File Structure
-Dependencies
-Contributing
-License
-Contact
+* Installation
+* Usage
+* File Structure
+* Dependencies
+* Contributing
+* License
+* Contact
 
 # Installation
 Clone the repository:
