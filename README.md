@@ -30,7 +30,7 @@ If any argument is not provided, a random selection will be used.
 The generated meme will be saved in the output directory.
 
 # File Structure
-src/
+.
 ├── _data/
 │   ├── DogQuotes
 │   ├── photos
