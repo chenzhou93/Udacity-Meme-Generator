@@ -31,44 +31,44 @@ If any argument is not provided, a random selection will be used.
 The generated meme will be saved in the output directory.
 
 # File Structure
-.<br />
-├── MemeGenerator.py<br />
-├── QuoteEngine<br />
-│   ├── CSVIngestor.py<br />
-│   ├── DocxIngestor.py<br />
-│   ├── Ingestor.py<br />
-│   ├── IngestorInterface.py<br />
-│   ├── PDFIngestor.py<br />
-│   ├── QuoteModel.py<br />
-│   ├── TextIngestor.py<br />
-│   └── __init__.py<br />
-├── README.md<br />
-├── _data<br />
-│   ├── DogQuotes<br />
-│   │   ├── DogQuotesCSV.csv<br />
-│   │   ├── DogQuotesDOCX.docx<br />
-│   │   ├── DogQuotesPDF.pdf<br />
-│   │   ├── DogQuotesTXT.txt<br />
-│   │   └── test.txt<br />
-│   ├── SimpleLines<br />
-│   │   ├── SimpleLines.csv<br />
-│   │   ├── SimpleLines.docx<br />
-│   │   ├── SimpleLines.pdf<br />
-│   │   └── SimpleLines.txt<br />
-│   └── photos<br />
-│       └── dog<br />
-│           ├── xander_1.jpg<br />
-│           ├── xander_2.jpg<br />
-│           ├── xander_3.jpg<br />
-│           └── xander_4.jpg<br />
-├── app.py<br />
-├── meme.py<br />
-├── requirements.txt<br />
-├── templates<br />
-│   ├── base.html<br />
-│   ├── meme.html<br />
-│   └── meme_form.html<br />
-└── tree.txt<br /><br />
+.<br/>
+├── MemeGenerator.py<br/>
+├── QuoteEngine<br/>
+│   ├── CSVIngestor.py<br/>
+│   ├── DocxIngestor.py<br/>
+│   ├── Ingestor.py<br/>
+│   ├── IngestorInterface.py<br/>
+│   ├── PDFIngestor.py<br/>
+│   ├── QuoteModel.py<br/>
+│   ├── TextIngestor.py<br/>
+│   └── __init__.py<br/>
+├── README.md<br/>
+├── _data<br/>
+│   ├── DogQuotes<br/>
+│   │   ├── DogQuotesCSV.csv<br/>
+│   │   ├── DogQuotesDOCX.docx<br/>
+│   │   ├── DogQuotesPDF.pdf<br/>
+│   │   ├── DogQuotesTXT.txt<br/>
+│   │   └── test.txt<br/>
+│   ├── SimpleLines<br/>
+│   │   ├── SimpleLines.csv<br/>
+│   │   ├── SimpleLines.docx<br/>
+│   │   ├── SimpleLines.pdf<br/>
+│   │   └── SimpleLines.txt<br/>
+│   └── photos<br/>
+│       └── dog<br/>
+│           ├── xander_1.jpg<br/>
+│           ├── xander_2.jpg<br/>
+│           ├── xander_3.jpg<br/>
+│           └── xander_4.jpg<br/>
+├── app.py<br/>
+├── meme.py<br/>
+├── requirements.txt<br/>
+├── templates<br/>
+│   ├── base.html<br/>
+│   ├── meme.html<br/>
+│   └── meme_form.html<br/>
+└── tree.txt<br/><br/>
 
 
 # Dependencies
