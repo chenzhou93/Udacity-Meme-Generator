@@ -11,10 +11,11 @@ A multimedia application to dynamically generate memes, including an image with 
 * Contact
 
 # Installation
-Clone the repository:
+### Clone the repository:
 
-git clone <repository-url>
-Install the required dependencies:
+git clone https://github.com/chenzhou93/Udacity-Meme-Generator.git
+
+### Install the required dependencies:
 
 pip install -r requirements.txt
 
