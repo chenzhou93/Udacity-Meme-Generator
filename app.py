@@ -24,7 +24,9 @@ def setup():
 
     # Use the Ingestor class to parse all files in the
     # quote_files variable
-    quotes_tmp = Ingestor.parse(quote_files)
+    quotes_tmp = []
+    for file in quote_files:
+        quotes_tmp.append(Ingestor.parse(quote_files))
 
     images_path = "./_data/photos/dog/"
 
