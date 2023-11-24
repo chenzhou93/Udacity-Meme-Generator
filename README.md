@@ -32,16 +32,16 @@ The generated meme will be saved in the output directory.
 
 # File Structure
 .
-├── MemeGenerator.py
-├── QuoteEngine
-│   ├── CSVIngestor.py
-│   ├── DocxIngestor.py
-│   ├── Ingestor.py
-│   ├── IngestorInterface.py
-│   ├── PDFIngestor.py
-│   ├── QuoteModel.py
-│   ├── TextIngestor.py
-│   └── __init__.py
+├── MemeGenerator.py<br />
+├── QuoteEngine<br />
+│   ├── CSVIngestor.py<br />
+│   ├── DocxIngestor.py<br />
+│   ├── Ingestor.py<br />
+│   ├── IngestorInterface.py<br />
+│   ├── PDFIngestor.py<br />
+│   ├── QuoteModel.py<br />
+│   ├── TextIngestor.py<br />
+│   └── __init__.py<br />
 ├── README.md
 ├── _data
 │   ├── DogQuotes
