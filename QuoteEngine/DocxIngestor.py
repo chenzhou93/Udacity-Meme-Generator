@@ -6,6 +6,7 @@ from .QuoteModel import QuoteModel
 
 class DocxIngestor(IngestorInterface):
     """Ingestor module to handle docx file"""
+    allowed_extensions = ['docx']
     @classmethod
     def parse(cls, path: str) -> List[QuoteModel]:
         quote_model_list = []
@@ -14,6 +15,7 @@ class DocxIngestor(IngestorInterface):
             raise Exception('cannot ingest exception')
 
         doc = Document(path)
+        
         for para in doc.paragraphs:
             if para.text != "":
                 para_text = para.text.split('-')

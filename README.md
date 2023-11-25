@@ -22,7 +22,7 @@ pip install -r requirements.txt
 # Usage
 Run the Meme Generator:
 
-python main.py [quote_body] [quote_author] [image_path]
+python meme.py [quote_body] [quote_author] [image_path]
 quote_body (optional): The body of the quote.
 quote_author (optional): The author of the quote.
 image_path (optional): The path to the image file.

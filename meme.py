@@ -15,12 +15,12 @@ def generate_meme(path=None, body=None, author=None):
     if path is None:
         images = "./_data/photos/dog/"
         imgs = []
-        for root, files in os.walk(images):
+        for root, dirs, files in os.walk(images):
             imgs = [os.path.join(root, name) for name in files]
 
         img = random.choice(imgs)
     else:
-        img = path[0]
+        img = path
 
     if body is None:
         quote_files = ['./_data/DogQuotes/DogQuotesTXT.txt',
@@ -29,6 +29,7 @@ def generate_meme(path=None, body=None, author=None):
                        './_data/DogQuotes/DogQuotesCSV.csv']
         quotes = []
         for f in quote_files:
+            #print('now parsing: ' + f)
             quotes.extend(Ingestor.parse(f))
 
         quote = random.choice(quotes)
@@ -38,7 +39,7 @@ def generate_meme(path=None, body=None, author=None):
         quote = QuoteModel(body, author)
 
     meme = MemeEngine('./tmp')
-    path = meme.make_meme(img, quote.body, quote.author)
+    path = meme.make_meme(img, quote.quote, quote.author)
     return path
 
 

@@ -1,4 +1,4 @@
-from PIL import Image, ImageDraw
+from PIL import Image, ImageDraw, ImageFont
 
 class MemeGenerator():
     """Meme Generator entrance"""
@@ -14,11 +14,14 @@ class MemeGenerator():
             img = img.resize((width, height), Image.NEAREST)
 
         draw = ImageDraw.Draw(img)
+        font = ImageFont.truetype('./_data/Font/Arial Unicode.ttf', 24)
 
         # Choose the position
         image_width, image_height = img.size
         text_content = text + ' - ' + author
-        text_width, text_height = draw.textsize(text_content)
+        left, top, right, bottom = draw.textbbox((0,0),text_content, font=font)
+        text_width = right - left
+        text_height = bottom - top
 
         text_position = ((image_width - text_width) // 2, (image_height - text_height) // 2)
 
@@ -26,6 +29,8 @@ class MemeGenerator():
         draw.text(text_position, text_content)
 
         # Save the modified image
+        #print('output_dir: ' + self.output_dir)
+        self.output_dir = self.output_dir + '/output.jpg'
         img.save(self.output_dir)
 
         return self.output_dir

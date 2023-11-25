@@ -5,6 +5,7 @@ from .QuoteModel import QuoteModel
 
 class TextIngestor(IngestorInterface):
     """Ingestor module to handle txt file"""
+    allowed_extensions = ['txt']
     @classmethod
     def parse(cls, path: str) -> List[QuoteModel]:
         quote_model_list = []
@@ -12,7 +13,7 @@ class TextIngestor(IngestorInterface):
         if not cls.can_ingest(path):
             raise Exception('cannot ingest exception')
 
-        file = open(path, "r", encoding='UTF-8')
+        file = open(path, "r")
         content = file.readlines()
         for line in content:
             if len(line) > 0:

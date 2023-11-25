@@ -12,7 +12,9 @@ class Ingestor(IngestorInterface):
     ingestors = [DocxIngestor, PDFIngestor, TextIngestor, CSVIngestor]
     @classmethod
     def parse(cls, path: str) -> List[QuoteModel]:
+        #print('ingestor: ' + path)
         for ingestor in cls.ingestors:
+            #print(ingestor)
             if ingestor.can_ingest(path):
                 return ingestor.parse(path)
  

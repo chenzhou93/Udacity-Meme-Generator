@@ -26,10 +26,10 @@ def setup():
     # quote_files variable
     quotes_tmp = []
     for file in quote_files:
-        quotes_tmp.append(Ingestor.parse(quote_files))
+        quotes_tmp.append(Ingestor.parse(file))
 
     images_path = "./_data/photos/dog/"
-
+ 
     # Use the pythons standard library os class to find all
     # images within the images images_path directory
     imgs_tmp = []
