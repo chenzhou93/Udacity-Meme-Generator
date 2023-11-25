@@ -21,13 +21,13 @@ pip install -r requirements.txt
 
 # Usage
 Run the Meme Generator:
-
+```
 python meme.py [quote_body] [quote_author] [image_path]
 quote_body (optional): The body of the quote.
 quote_author (optional): The author of the quote.
 image_path (optional): The path to the image file.
 If any argument is not provided, a random selection will be used.
-
+```
 The generated meme will be saved in the output directory.
 
 # File Structure
